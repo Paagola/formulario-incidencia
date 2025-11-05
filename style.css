@@ -1,0 +1,45 @@
+body {
+    height: 100%;
+    margin: 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    /*ALINEACIÓN VERTICAL Y HORIZONTAL*/
+    width: 0px auto;
+    padding: 1rem;
+}
+
+header img {
+    width: 300px;
+    height: 110px;
+}
+
+main {
+    padding: 2rem;
+}
+
+fieldset {
+    border: 9px solid darkgoldenrod;
+    background-color: #F4F1ED;
+    color: firebrick;
+    border-radius: 7px;
+    width: 400px;
+}
+
+legend {
+    color: darkblue;
+    font-weight: bold;
+}
+
+.elemento-formulario {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    gap: 10px; /*NO FUNCIONA*/
+    width: 100%;
+    /*ALINEACION VERTICAL*/
+    margin-bottom: 5px;
+}

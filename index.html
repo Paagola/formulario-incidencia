@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="formulario" content="formulario-incidencias" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="img/IAT-LOGOTIPO.jpg" alt="alt text logo" />
+    </header>
+    <main>
+      <section>
+        <fieldset>
+          <legend>Nueva indicencia</legend>
+          <form action="">
+            <div class="elemento-formulario">
+              <label for="text">
+                Profesor *:
+                <input type="text" placeholder="Nombre profesor" required />
+              </label>
+            </div>
+            <div class="elemento-formulario">
+              <label for="email">
+                Correo electrónico *:
+                <input
+                  type="email"
+                  placeholder="Escribe tu correo aquí"
+                  required
+                />
+              </label>
+            </div>
+            <div class="elemento-formulario">
+              <label for="select">
+                Departamento *:
+                <select name="Departamento" id="">
+                  <option selected disabled>--selección--</option>
+                  <option value="informatica">Informática</option>
+                  <option value="marketing">Marketing</option>
+                  <option value="secretaria">Secretaria</option>
+                </select>
+              </label>
+            </div>
+            <div class="elemento-formulario">
+              <label for="">
+                Aula *: <input type="text" name="" required />
+              </label>
+            </div>
+            <div class="elemento-forumlario">
+              <label for="week">
+                Dia de la incidenia *:
+                <input type="week" name="week" id="" required />
+              </label>
+            </div>
+            <div class="elemento-formulario">
+              <label for="time">
+                Hora de la incidencia *:<input
+                  type="time"
+                  name="time"
+                  id=""
+                  required
+                />
+              </label>
+            </div>
+            <div class="elemento-formulario">
+              <label for="">
+                Descripcion de la incidencia *:
+                <textarea name="" id="" required></textarea>
+              </label>
+            </div>
+            <div class="elemento-formulario">
+              <label for="">
+                <p>Imagen de la incidencia (opcional)</p>
+              </label>
+            </div>
+            <div class="elemento-formulario">
+                <button type="fi">Elegir archivo</button>
+                <p>No se ha seleccionado ningun archivo</p>
+            </div>
+
+            <div class="botones-envio">
+                <button>Enviar incidencia</button>
+                <button>Borrar formulario</button>
+            </div>
+          </form>
+        </fieldset>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
