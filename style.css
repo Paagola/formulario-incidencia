@@ -1,13 +1,15 @@
 body {
-    height: 100%;
     margin: 0px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    /*ALINEACIÓN VERTICAL Y HORIZONTAL*/
+    display: flex;
+    justify-content: center; /*ALINEACIÓN HORIZONTAL*/
+    align-items: center;/*ALINEACIÓN VERTICAL*/
     width: 0px auto;
     padding: 1rem;
 }
@@ -21,25 +23,65 @@ main {
     padding: 2rem;
 }
 
-fieldset {
-    border: 9px solid darkgoldenrod;
+
+fieldset { /*He preferido en vez de en form ponerlo en fieldset para que quede como la imagen*/
     background-color: #F4F1ED;
     color: firebrick;
+    border: 9px solid darkgoldenrod;
     border-radius: 7px;
     width: 400px;
 }
 
-legend {
+fieldset legend {
     color: darkblue;
     font-weight: bold;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
 .elemento-formulario {
     display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    gap: 10px; /*NO FUNCIONA*/
-    width: 100%;
-    /*ALINEACION VERTICAL*/
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
     margin-bottom: 5px;
+}
+
+.elemento-formulario-archivo {
+    display: flex;
+    flex-direction: column ;
+    gap: 10px;
+}
+
+.elemento-formulario-botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+h3 {
+    color: #F7C600;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer img {
+    width: 48px;
+    height: 48px;
 }

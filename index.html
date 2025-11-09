@@ -15,80 +15,85 @@
       <section>
         <fieldset>
           <legend>Nueva indicencia</legend>
-          <form action="">
+          <form action="procesarincidencia.php" method="post">
             <div class="elemento-formulario">
-              <label for="text">
-                Profesor *:
+              <label for="text">Profesor *:</label>
                 <input type="text" placeholder="Nombre profesor" required />
-              </label>
             </div>
             <div class="elemento-formulario">
-              <label for="email">
-                Correo electrónico *:
+              <label for="email">Correo electrónico *:</label>
                 <input
                   type="email"
                   placeholder="Escribe tu correo aquí"
                   required
                 />
-              </label>
             </div>
             <div class="elemento-formulario">
-              <label for="select">
-                Departamento *:
+              <label for="select">Departamento *:</label>
+                
                 <select name="Departamento" id="">
                   <option selected disabled>--selección--</option>
                   <option value="informatica">Informática</option>
                   <option value="marketing">Marketing</option>
                   <option value="secretaria">Secretaria</option>
                 </select>
-              </label>
             </div>
             <div class="elemento-formulario">
-              <label for="">
-                Aula *: <input type="text" name="" required />
-              </label>
+              <label for="">Aula *:</label>
+                 <input type="text" name="" required />
             </div>
-            <div class="elemento-forumlario">
-              <label for="week">
-                Dia de la incidenia *:
+            <div class="elemento-formulario">
+              <label for="week">Dia de la incidenia *:</label>
+                
                 <input type="week" name="week" id="" required />
-              </label>
             </div>
             <div class="elemento-formulario">
-              <label for="time">
-                Hora de la incidencia *:<input
+              <label for="time">Hora de la incidencia *:</label>
+                <input
                   type="time"
                   name="time"
                   id=""
                   required
                 />
-              </label>
             </div>
             <div class="elemento-formulario">
-              <label for="">
-                Descripcion de la incidencia *:
+              <label for="">Descripcion de la incidencia *:</label>
+                
                 <textarea name="" id="" required></textarea>
-              </label>
             </div>
-            <div class="elemento-formulario">
-              <label for="">
-                <p>Imagen de la incidencia (opcional)</p>
-              </label>
-            </div>
-            <div class="elemento-formulario">
-                <button type="fi">Elegir archivo</button>
-                <p>No se ha seleccionado ningun archivo</p>
+            <div class="elemento-formulario-archivo">
+              <label for="archivo">Imagen de la incidencia (opcional)</label>
+                <input type="file" name="archivo" id="archivo" accept="image/*" ">
             </div>
 
-            <div class="botones-envio">
-                <button>Enviar incidencia</button>
-                <button>Borrar formulario</button>
+            <div class="elemento-formulario-botones">
+                <button type="submit" >Enviar incidencia</button>
+                <button type="reset">Borrar formulario</button>
             </div>
           </form>
         </fieldset>
       </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <h3>Síguenos</h3>
+      <div class="img-footer">
+        <a href="https://www.instagram.com/cpifpalanturing/?hl=es">
+            <img src="img/icons8-instagram-48.png" alt="instagram">
+        </a>
+        <a href="https://www.facebook.com/?locale=es_ES">
+          <img src="img/icons8-facebook-48.png" alt="facebook">
+        </a>
+        <a href="https://x.com/?lang=es">
+          <img src="img/icons8-twitter-48.png" alt="twitter">
+        </a>
+        <a href="https://www.youtube.com/">
+          <img src="img/icons8-youtube-48.png" alt="youtube">
+        </a>
+        <a href="https://fpalanturing.es/">
+          <img src="img/icons8-website-48.png" alt="website">
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
